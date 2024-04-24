@@ -9,6 +9,10 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   autoMerge: false,
   npmignoreEnabled: false,
 
+  license: 'MIT-0',
+  copyrightOwner: 'Amazon.com, Inc. or its affiliates. All Rights Reserved.',
+  copyrightPeriod: '',
+
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
