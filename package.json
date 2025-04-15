@@ -43,7 +43,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.173.1",
+    "aws-cdk-lib": "^2.189.1",
     "constructs": "^10.0.5"
   },
   "license": "MIT-0",
