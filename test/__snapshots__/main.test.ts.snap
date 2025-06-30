@@ -104,14 +104,14 @@ exports[`Snapshot 1`] = `
       "DeletionPolicy": "Delete",
       "Properties": {
         "DataProtectionPolicy": {
-          "configuration": {
-            "customDataIdentifier": [],
+          "Configuration": {
+            "CustomDataIdentifier": [],
           },
-          "description": "Masks PII for name, address and email address",
-          "name": "data-protection-policy-cdk",
-          "statement": [
+          "Description": "Masks PII for name, address and email address",
+          "Name": "data-protection-policy-cdk",
+          "Statement": [
             {
-              "dataIdentifier": [
+              "DataIdentifier": [
                 {
                   "Fn::Join": [
                     "",
@@ -149,21 +149,21 @@ exports[`Snapshot 1`] = `
                   ],
                 },
               ],
-              "operation": {
-                "audit": {
-                  "findingsDestination": {
-                    "cloudWatchLogs": {
-                      "logGroup": {
+              "Operation": {
+                "Audit": {
+                  "FindingsDestination": {
+                    "CloudWatchLogs": {
+                      "LogGroup": {
                         "Ref": "PiiDetectedLogGroup3F5A247B",
                       },
                     },
                   },
                 },
               },
-              "sid": "audit-statement-cdk",
+              "Sid": "audit-statement-cdk",
             },
             {
-              "dataIdentifier": [
+              "DataIdentifier": [
                 {
                   "Fn::Join": [
                     "",
@@ -201,15 +201,15 @@ exports[`Snapshot 1`] = `
                   ],
                 },
               ],
-              "operation": {
-                "deidentify": {
-                  "maskConfig": {},
+              "Operation": {
+                "Deidentify": {
+                  "MaskConfig": {},
                 },
               },
-              "sid": "redact-statement-cdk",
+              "Sid": "redact-statement-cdk",
             },
           ],
-          "version": "2021-06-01",
+          "Version": "2021-06-01",
         },
         "RetentionInDays": 1,
       },
